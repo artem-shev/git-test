@@ -4,4 +4,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Demo
 
-To see working demo visit [DEMO](https://artem-shev.github.io/git-test)
+To see working demo visit [DEMO](https://artem-shev.github.io/git-test) and insert some user login from github.
