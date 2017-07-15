@@ -1,0 +1,10 @@
+<form (ngSubmit)="searchUser(usersQuery)">
+  <div class="input-group">
+    <input class="form-control" type="text" [(ngModel)]="usersQuery" name="usersQuery" placeholder="user login" /> <br>
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</form>

@@ -1,0 +1,25 @@
+<div class="container-fluid user">
+  <div class="row">
+    <div class="col-md-4">
+      <search (getUser)="getUser($event)"></search>
+    </div>
+  </div>
+
+  <h3 class="row" *ngIf="!!user.login">
+    <div class="pull-left user__ava">
+      <img [src]="user.avatar_url" alt="">
+    </div>
+    <div class="col-md-6 user__name">
+      {{user.login}}
+    </div>
+  </h3>
+
+  <h4 *ngIf="user.repos?.length">Available repositories</h4>
+  <ul *ngIf="user.repos?.length" class="list-group col-md-8">
+    <li *ngFor="let repo of user.repos" class="row list-group-item">
+      <div class="col-md-8" class="repos__item">
+        <a [routerLink]="['repos/', repo.owner.login, repo.name]">{{repo.name}}</a>
+      </div>
+    </li>
+  </ul>
+</div>
